@@ -7,3 +7,11 @@ def main_view(request):
 
 def ironmain_view(request):
   return render(request, 'ironman.html')
+
+
+def starfall_view(request):
+  return render(request, 'starfall.html')
+
+
+def slingshot_view(request):
+  return render(request, 'slingshot.html')

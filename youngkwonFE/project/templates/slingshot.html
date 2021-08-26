@@ -1,12 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="../image/favicon.ico"/>
-  <link rel="stylesheet" href="../css/common.css">
-  <link rel="stylesheet" href="../css/slingshot.css">
+  <link rel="icon" type="image/png" href="{% static 'image/favicon.ico' %}"/>
+  <link rel="stylesheet" href="{% static 'css/common.css' %}">
+  <link rel="stylesheet" href="{% static 'css/slingshot.css' %}">
   <title>Sling Shot</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
     <div>Shot : <span class="score">0</span></div><br>
     <div class="reset" onclick="location.reload()">Reset</div>
   </div>
-  <script src="../js/matter.min.js"></script>
+  <script src="{% static 'js/matter.min.js' %}"></script>
   <script>
     let divWidth = window.innerWidth;
     let divHeight = window.innerHeight;
@@ -81,6 +82,6 @@
     Matter.Render.run(render);
   </script>
 
-  <a href="/index.html"><div class="cancel-btn"></div></a>
+  <a href="/"><div class="cancel-btn"></div></a>
 </body>
 </html>
