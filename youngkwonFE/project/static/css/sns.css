@@ -1,0 +1,8 @@
+iframe {
+  display: inline-block !important;
+  margin: 0 10px !important;
+}
+
+.content {
+  text-align: center;
+}
