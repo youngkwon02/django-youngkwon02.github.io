@@ -22,8 +22,6 @@ const GALLERY_INDEX = [
   "Salmon.jpeg",
   "Observatory.jpeg",
   "Inha.JPG",
-  "Observatory.jpeg",
-  "Inha.JPG",
   "Domain.PNG",
   "Impression.jpeg",
   "Cafe-park.jpeg",
