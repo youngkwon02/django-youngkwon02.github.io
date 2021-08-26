@@ -1,12 +1,189 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery</title>
+  <link rel="icon" type="image/png" href="{% static 'image/favicon.ico' %}"/>
+  <link rel="stylesheet" href="{% static 'css/common.css' %}">
+  <link rel="stylesheet" href="{% static 'css/common-desktop.css' %}">
+  <link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+  <link rel="stylesheet" href="{% static 'css/gallery-desktop.css' %}">
+  <script src="{% static 'js/gallery.js' %}"></script>
+  <title>Youngkwon Kim</title>
 </head>
 <body>
-  Gallery
+  <nav>
+    <div class="profile-logo"></div>
+    <ul>
+      <a href="/">
+        <li>HOME</li>
+      </a>
+      <a href="/gallery/">
+        <li>GALLERY</li>
+      </a>
+      <a href="/sns/">
+        <li>SNS</li>
+      </a>
+      <a href="mailto:jakealden97@gmail.com">
+        <li>MAIL</li>
+      </a>
+    </ul>
+  </nav>
+  <div class="content">
+    <div class="photo-view-container">
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Focusing.JPG' %}">
+        <div class="photo-view-title">Focusing</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Cafe.jpeg' %}">
+        <div class="photo-view-title">Cafe</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Movie-scene.jpeg' %}">
+        <div class="photo-view-title">Moive-scene</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Movie-scene2.jpeg' %}">
+        <div class="photo-view-title">Moive-scene2</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Last-Gangwon.jpeg' %}">
+        <div class="photo-view-title">Last-Gangwon</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Falling.jpeg' %}">
+        <div class="photo-view-title">Falling</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/After-rain.jpeg' %}">
+        <div class="photo-view-title">After-rain</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/See-thru.jpeg' %}">
+        <div class="photo-view-title">See-thru</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Puplish-sky.jpeg' %}">
+        <div class="photo-view-title">Puplish-sky</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Enlist.jpg' %}">
+        <div class="photo-view-title">Enlist</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Jecheon.jpeg' %}">
+        <div class="photo-view-title">Jecheon</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Discharge.jpg' %}">
+        <div class="photo-view-title">Discharge</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Space-Jak.jpeg' %}">
+        <div class="photo-view-title">Space-Jak</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Youngs-star.jpeg' %}">
+        <div class="photo-view-title">Young's-star</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Gimpo-drive.jpeg' %}">
+        <div class="photo-view-title">Gimpo-drive</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Likelion-SS.jpeg' %}">
+        <div class="photo-view-title">Likelion-SS</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Night-sea.jpeg' %}">
+        <div class="photo-view-title">Night-sea</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Family.jpg' %}">
+        <div class="photo-view-title">Family</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Refresh.JPG' %}">
+        <div class="photo-view-title">Refresh</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Flight.jpeg' %}">
+        <div class="photo-view-title">Flight</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Salmon.jpeg' %}">
+        <div class="photo-view-title">Salmon</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Observatory.jpeg' %}">
+        <div class="photo-view-title">Observatory</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Inha.JPG' %}">
+        <div class="photo-view-title">At Inha</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Domain.PNG' %}">
+        <div class="photo-view-title">DoMain</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Impression.jpeg' %}">
+        <div class="photo-view-title">Impression</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Cafe-park.jpeg' %}">
+        <div class="photo-view-title">Cafe Park</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/LaLaLand.jpeg' %}">
+        <div class="photo-view-title">LaLaLand</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Wonder.JPG' %}">
+        <div class="photo-view-title">Wonder</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Graduation.jpg' %}">
+        <div class="photo-view-title">Graduation</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Airforce-runner.jpeg' %}">
+        <div class="photo-view-title">Airforce-runner</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/Trip.jpeg' %}">
+        <div class="photo-view-title">Trip</div>
+      </div>
+      <div class="photo-view-thumbnail">
+        <img src="{% static 'image/gallery/V.jpeg' %}">
+        <div class="photo-view-title">V</div>
+      </div>
+    </div>
+  </div>
 </body>
+<footer>
+  <ul>
+    <a target="_blank" href="https://github.com/youngkwon02">
+      <li>
+        <img src="{% static 'image/github.png' %}">
+      </li>
+    </a>
+    <a target="_blank" href="https://www.instagram.com/youngkwon_/">
+      <li>
+        <img src="{% static 'image/instagram.png' %}">
+      </li>
+    </a>
+    <a target="_blank" href="https://www.facebook.com/profile.php?id=100005914232074">
+      <li>
+        <img src="{% static 'image/facebook.png' %}">
+      </li>
+    </a>
+  </ul>
+  <div class="copyright">
+    <span>Copyright ⓒ 2021. Youngkwon. All rights reserved</span>
+  </div>
+</footer>
 </html>
