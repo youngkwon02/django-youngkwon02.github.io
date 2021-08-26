@@ -29,6 +29,13 @@ const imageRendering = (page) => {
   
   document.querySelector('.photo-view-container').innerHTML = innerHTML;
   thumbnailSizeSet();
+
+  // PageIndexNav set
+  let maxPage = Math.ceil((maxIndex+1) / 8);
+  for(let i=1; i<=maxPage; i++) {
+    let liTag = "<a href='/gallery/" + i + "'><li>" + i + "</li></a>";
+    document.querySelector('.gallery-page-nav ul').innerHTML += liTag;
+  }
 }
 
 const titleParsing = (name) => {
