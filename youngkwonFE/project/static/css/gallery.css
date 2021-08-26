@@ -26,3 +26,17 @@
   margin-top: 5px;
   font-family: Blacksword;
 }
+
+.gallery-page-nav {
+  text-align: center;
+  color: white;
+}
+
+.gallery-page-nav ul {
+  list-style: none;
+  padding-left: 18px;
+}
+
+.gallery-page-nav ul li {
+  display: inline-block;
+}
