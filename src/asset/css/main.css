@@ -1,0 +1,22 @@
+#carousel-content {
+  padding-top: 90px;
+  height: 66vh;
+}
+
+.scroll-notice {
+  color: #bbbbbb;
+  font-family: OstrichSansInline-Medium;
+  font-size: 14px;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  animation: notice-bounce 2s ease-in-out infinite;
+}
+
+@keyframes notice-bounce {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(16px, 0);
+  }
+}
