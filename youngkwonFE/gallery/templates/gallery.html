@@ -16,8 +16,8 @@
 </head>
 <script>
   window.onload = () => {
-    imageRendering({{page}});
-    document.querySelectorAll('.gallery-page-nav ul li')[{{page}} - 1].style.color = "red";
+    imageRendering(`{{page}}`);
+    document.querySelectorAll('.gallery-page-nav ul li')[`{{page}}` - 1].style.color = "red";
   };
 </script>
 <body>
