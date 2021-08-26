@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="../image/favicon.ico"/>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/slingshot.css">
+  <title>Sling Shot</title>
+</head>
+<body>
+  <div class="game-board">
+    <div>Shot : <span class="score">0</span></div><br>
+    <div class="reset" onclick="location.reload()">Reset</div>
+  </div>
+  <script src="../js/matter.min.js"></script>
+  <script>
+    let divWidth = window.innerWidth;
+    let divHeight = window.innerHeight;
+    let engine = Matter.Engine.create();
+    let render = Matter.Render.create({
+      element: document.body,
+      engine: engine,
+      options: {
+        width: divWidth,
+        height: divHeight,
+        wireframes: false
+      }
+    });
+    let ground, slingX, stack;
+    if(divWidth > 900) {
+      ground = Matter.Bodies.rectangle(divWidth - 340,divHeight - 200,300,20,{isStatic: true});
+      slingX = 300;
+      stack = Matter.Composites.stack(divWidth - 450,80,4,4,0,0, function(x,y){
+        return Matter.Bodies.polygon(x,y,8,30);
+      });
+    } else {
+      ground = Matter.Bodies.rectangle(divWidth - 100,200,150,20,{isStatic: true});
+      slingX = 70;
+      stack = Matter.Composites.stack(divWidth - 178,30,4,4,0,0, function(x,y){
+        return Matter.Bodies.polygon(x,y,8,20);
+      });
+    }
+    let mouse = Matter.Mouse.create(render.canvas);
+    let mouseConstraint = Matter.MouseConstraint.create(engine, {
+      mouse: mouse,
+      constraint: {
+        render: {visible: false}
+      }
+    });
+    render.mouse = mouse;
+
+    let slingY = divHeight-200;
+
+    let ball = Matter.Bodies.circle(slingX,slingY,20);
+    let sling = Matter.Constraint.create({
+      pointA: {x:slingX, y:slingY},
+      bodyB: ball,
+      stiffness: 0.05
+    });
+
+    let firing = false;
+    Matter.Events.on(mouseConstraint, 'enddrag', function(e){
+      if(e.body === ball) firing = true;
+    });
+    Matter.Events.on(engine,'afterUpdate',function(){
+      if(firing && Math.abs(ball.position.x-slingX) < 20 && Math.abs(ball.position.y-slingY)<20) {
+        ball = Matter.Bodies.circle(slingX, slingY, 20);
+        Matter.World.add(engine.world,ball);
+        sling.bodyB = ball;
+        firing = false;
+
+        let updatedScore = parseInt(document.querySelector('.score').innerHTML) + 1;
+        document.querySelector('.score').innerHTML = updatedScore;
+      }
+    });
+    
+    Matter.World.add(engine.world,[stack, ground, ball, sling, mouseConstraint]);
+    Matter.Engine.run(engine);
+    Matter.Render.run(render);
+  </script>
+
+  <a href="/index.html"><div class="cancel-btn"></div></a>
+</body>
+</html>
