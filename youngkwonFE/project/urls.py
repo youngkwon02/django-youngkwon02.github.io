@@ -6,4 +6,6 @@ urlpatterns = [
   path('ironman/', views.ironmain_view, name="ironman"),
   path('starfall/', views.starfall_view, name="starfall"),
   path('slingshot/', views.slingshot_view, name="slingshot"),
+  path('acidWorld/', views.acid_world_view, name="acidWorld"),
+  path('sunset/', views.sunset_view, name="sunset"),
 ]

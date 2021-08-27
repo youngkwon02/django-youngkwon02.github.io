@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="{% static 'image/favicon.ico' %}"/>
+  <link rel="stylesheet" href="{% static 'css/common.css' %}">
+  <title>Sunset</title>
+</head>
+<body>
+  <script src="{% static 'js/three.min.js' %}"></script>
+  <script src="{% static 'js/OrbitControls.js' %}"></script>
+  <script>
+    let scene, camera, renderer;
+    function init() {
+      scene = new THREE.Scene;
+
+      camera = new THREE.PerspectiveCamera(55, window.innerWidth/window.innerHeight, 45, 30000);
+      camera.position.set(-900, -200, -900);
+
+      renderer = new THREE.WebGLRenderer({antialias: true});
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      document.body.appendChild(renderer.domElement);
+
+      let controls = new THREE.OrbitControls(camera,renderer.domElement);
+      controls.addEventListener('change', renderer);
+      controls.minDistance = 300;
+      controls.maxDistance = 2000;
+
+      let materialArray = [];
+      let texture_ft = new THREE.TextureLoader().load("{% static '/image/skybox/sunsetflat_ft.jpg' %}");
+      let texture_bk = new THREE.TextureLoader().load("{% static '/image/skybox/sunsetflat_bk.jpg' %}");
+      let texture_up = new THREE.TextureLoader().load("{% static '/image/skybox/sunsetflat_up.jpg' %}");
+      let texture_dn = new THREE.TextureLoader().load("{% static '/image/skybox/sunsetflat_dn.jpg' %}");
+      let texture_rt = new THREE.TextureLoader().load("{% static '/image/skybox/sunsetflat_rt.jpg' %}");
+      let texture_lf = new THREE.TextureLoader().load("{% static '/image/skybox/sunsetflat_lf.jpg' %}");
+
+      materialArray.push(new THREE.MeshBasicMaterial({map: texture_ft}));
+      materialArray.push(new THREE.MeshBasicMaterial({map: texture_bk}));
+      materialArray.push(new THREE.MeshBasicMaterial({map: texture_up}));
+      materialArray.push(new THREE.MeshBasicMaterial({map: texture_dn}));
+      materialArray.push(new THREE.MeshBasicMaterial({map: texture_rt}));
+      materialArray.push(new THREE.MeshBasicMaterial({map: texture_lf}));
+
+      for(let i = 0; i < 6; i++) {
+        materialArray[i].side = THREE.BackSide;
+      }
+
+      let skyboxGeo = new THREE.BoxGeometry(10000,10000,10000);
+      let skybox = new THREE.Mesh(skyboxGeo, materialArray);
+      scene.add(skybox);
+
+      animate();
+    }
+    function animate() {
+      renderer.render(scene,camera);
+      requestAnimationFrame(animate);
+    }
+    init();
+  </script>
+  <a href="/"><div class="cancel-btn"></div></a>
+</body>
+</html>
