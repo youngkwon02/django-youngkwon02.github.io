@@ -43,6 +43,7 @@ p {
   width: 100vw;
   max-width: 400px;
   height: 66vh;
+  max-height: 500px;
 }
 
 .tile__details {
