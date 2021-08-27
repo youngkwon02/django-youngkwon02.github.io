@@ -6,3 +6,4 @@ secrets.json
 *.PNG
 *.png
 *.jpg
+./youngkwonFE/project/static/image/gallery/*
