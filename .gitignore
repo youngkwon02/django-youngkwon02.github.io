@@ -1,3 +1,8 @@
 **/.DS_Store
 myvenv
 secrets.json
+*.jpeg
+*.JPG
+*.PNG
+*.png
+*.jpg
