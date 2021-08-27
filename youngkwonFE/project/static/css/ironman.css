@@ -1,3 +1,17 @@
 html, body {
   margin: 0;
 }
+
+.notice {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 200px;
+  text-align: center;
+  font-weight: bold;
+  font-family: Serpentine;
+  font-size: 2em;
+}
