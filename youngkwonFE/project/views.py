@@ -15,3 +15,11 @@ def starfall_view(request):
 
 def slingshot_view(request):
   return render(request, 'slingshot.html')
+
+
+def acid_world_view(request):
+  return render(request, 'acid-world.html')
+
+
+def sunset_view(request):
+  return render(request, 'sunset.html')

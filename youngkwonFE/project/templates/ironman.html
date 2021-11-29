@@ -15,8 +15,11 @@
   <script src="{% static 'js/OrbitControls.js' %}"></script>
   <script src="{% static 'js/objloader.js' %}"></script>
   <script src="{% static 'js/MTLLoader.js' %}"></script>
+  <div class="notice">
+    Ironman is coming🤩<br>
+    Wait a moment please 🙏
+  </div>
   <script>
-    window.onload = () => {
     let scene;
     function init() {
       scene = new THREE.Scene();
@@ -65,6 +68,9 @@
           animate();
         },
         function ( xhr ) {
+          if(( xhr.loaded / xhr.total * 100 ) === 100) {
+            document.querySelector('.notice').style.display = 'none';
+          }
           console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
         },
         function ( error ) {
@@ -88,7 +94,7 @@
       });
     }
     init();
-  }
+  
   </script>
   <a href="/"><div class="cancel-btn"></div></a>
 </body>
