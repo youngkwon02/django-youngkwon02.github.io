@@ -7,3 +7,4 @@ secrets.json
 *.png
 *.jpg
 youngkwonFE/project/static/image/gallery/*
+youngkwonFE/project/static/image/skybox/*
