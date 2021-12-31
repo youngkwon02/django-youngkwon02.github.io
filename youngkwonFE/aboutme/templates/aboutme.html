@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="{% static 'image/favicon.ico' %}" />
+    <link rel="stylesheet" href="{% static 'css/common.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/common-desktop.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/aboutme.css' %}" />
+    <script src="{% static 'js/aboutme.js' %}"></script>
+    <title>Youngkwon Kim</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="profile-logo"></div>
+      <ul>
+        <a href="/">
+          <li>HOME</li>
+        </a>
+        <a href="/youngkwon/">
+          <li>ABOUT ME</li>
+        </a>
+        <a href="/gallery/">
+          <li>GALLERY</li>
+        </a>
+        <a href="mailto:jakealden97@gmail.com">
+          <li>MAIL</li>
+        </a>
+      </ul>
+    </nav>
+    <div class="content">
+      <div class="profile"></div>
+    </div>
+  </body>
+  <footer>
+    <ul>
+      <a target="_blank" href="https://github.com/youngkwon02">
+        <li>
+          <img src="{% static 'image/github.png' %}" />
+        </li>
+      </a>
+      <a target="_blank" href="https://www.instagram.com/youngkwon_/">
+        <li>
+          <img src="{% static 'image/instagram.png' %}" />
+        </li>
+      </a>
+      <a
+        target="_blank"
+        href="https://www.facebook.com/profile.php?id=100005914232074"
+      >
+        <li>
+          <img src="{% static 'image/facebook.png' %}" />
+        </li>
+      </a>
+    </ul>
+    <div class="copyright">
+      <span>Copyright ⓒ 2021. Youngkwon. All rights reserved</span>
+    </div>
+  </footer>
+</html>
