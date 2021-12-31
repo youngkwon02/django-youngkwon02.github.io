@@ -1,6 +1,14 @@
 @media (max-width: 730px) {
   .content-aboutme {
     padding: 0 1.25rem;
+    overflow: hidden;
+  }
+  .sub-content {
+    padding: 0;
+  }
+  .profile .profile-info-flex div {
+    font-weight: 500;
+    font-size: 0.7rem;
   }
   .profile {
     display: block;
@@ -13,7 +21,46 @@
   .profile-info-wrapper {
     padding-left: 0rem !important;
   }
+  .comment .comment-content .comment-content-head {
+    font-size: 1rem;
+  }
+  .comment .comment-content-body {
+    font-size: 1rem;
+  }
+  .comment-body-inner .subli {
+    font-size: 0.75rem;
+  }
   .timeline__main .title {
+    font-size: 0.8rem;
     line-height: 1.2rem;
+  }
+  .project-content {
+    display: block;
+    padding: 0;
+  }
+  .project-content .project-elem {
+    display: block;
+  }
+  .project-content .project-elem .project-thumb {
+    display: block;
+    margin: auto;
+  }
+  .project-content .project-elem .head {
+    text-align: center;
+  }
+  .project-content .project-elem .head .stack {
+    justify-content: center;
+  }
+  .project-content .project-elem .project-info {
+    padding-left: 0;
+  }
+  .project-content .project-elem .project-info .detail {
+    font-size: 0.8rem;
+  }
+  .not-mob-category {
+    display: none !important;
+  }
+  .mob-category {
+    display: flex !important;
   }
 }
