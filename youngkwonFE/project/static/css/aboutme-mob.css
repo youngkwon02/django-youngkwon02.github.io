@@ -1,0 +1,16 @@
+@media (max-width: 730px) {
+  .content-aboutme {
+    padding: 0 1.25rem;
+  }
+  .profile {
+    display: block;
+    text-align: center;
+  }
+  .profile .profile-mimoji {
+    display: inline-block;
+    width: 50%;
+  }
+  .profile-info-wrapper {
+    padding-left: 0rem !important;
+  }
+}
