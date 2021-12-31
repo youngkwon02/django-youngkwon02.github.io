@@ -18,6 +18,7 @@
 
 .sub-content {
   padding: 0 1rem;
+  margin-bottom: 4rem;
 }
 
 .profile {
@@ -87,4 +88,24 @@
 
 .profile .profile-info-flex div a:hover {
   color: #00dbff;
+}
+
+.comment .comment-title {
+  display: inline-block;
+  width: auto;
+  color: #00dbff;
+  border: 2px solid #00dbff;
+  padding: 0.4rem 1rem;
+  font-weight: 700;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+
+.comment .comment-content {
+  display: flex;
+}
+
+.comment .comment-content .comment-content-head {
+  font-size: 1.6rem;
+  word-break: keep-all;
 }
