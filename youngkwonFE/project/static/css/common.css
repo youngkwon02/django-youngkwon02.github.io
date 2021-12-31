@@ -1,36 +1,36 @@
 @font-face {
   font-family: Alphacentauri;
-  src: url('../font/Alphacentauri.ttf');
+  src: url("../font/Alphacentauri.ttf");
 }
 
 @font-face {
   font-family: Serpentine;
-  src: url('../font/Serpentine.ttf');
+  src: url("../font/Serpentine.ttf");
 }
 
 @font-face {
   font-family: Blacksword;
-  src: url('../font/Blacksword.otf');
+  src: url("../font/Blacksword.otf");
 }
 
 @font-face {
   font-family: OstrichSansInline-Italic;
-  src: url('../font/OstrichSansInline-Italic.otf');
+  src: url("../font/OstrichSansInline-Italic.otf");
 }
 
 @font-face {
   font-family: OstrichSansInline-Medium;
-  src: url('../font/OstrichSans-Medium.otf');
+  src: url("../font/OstrichSans-Medium.otf");
 }
 
 @font-face {
   font-family: OstrichSans-Bold;
-  src: url('../font/OstrichSans-Bold.otf');
+  src: url("../font/OstrichSans-Bold.otf");
 }
 
 @font-face {
   font-family: Crashnumberinggothic-MAjp;
-  src: url('../font/Crashnumberinggothic-MAjp.ttf');
+  src: url("../font/Crashnumberinggothic-MAjp.ttf");
 }
 
 .cancel-btn {
@@ -41,7 +41,7 @@
   left: 50%;
   bottom: 30px;
   transform: translate(-50%, 0);
-  background: url('../image/close-btn.png');
+  background: url("../image/close-btn.png");
   background-position: center;
   background-size: cover;
 }
@@ -63,7 +63,7 @@ nav {
   width: calc(100vw - 20px);
   height: 45px;
   padding: 10px 10px;
-  background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(0, 0, 0, 0.8);
   font-family: Serpentine;
 }
 
@@ -83,7 +83,7 @@ a {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: url('../image/logo-large.jpeg');
+  background: url("../image/logo-large.jpeg");
   background-size: contain;
 }
 
@@ -101,9 +101,9 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  padding: 0 6px;
-  font-size: 18px;
-  transition: all .2s ease-out;
+  padding: 0 4px;
+  font-size: 17px;
+  transition: all 0.2s ease-out;
 }
 
 nav ul a:hover {
@@ -127,7 +127,7 @@ footer ul a li {
   display: inline-block;
   padding: 0 6px;
   font-size: 18px;
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
   margin: 0 6px;
   width: 40px;
 }
@@ -152,6 +152,6 @@ footer .copyright {
 }
 
 ::-webkit-scrollbar {
-	width: 0;
-	background: transparent;
+  width: 0;
+  background: transparent;
 }
