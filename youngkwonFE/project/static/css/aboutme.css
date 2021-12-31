@@ -98,14 +98,40 @@
   padding: 0.4rem 1rem;
   font-weight: 700;
   border-radius: 2px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.4rem;
 }
 
 .comment .comment-content {
-  display: flex;
+  display: block;
 }
 
 .comment .comment-content .comment-content-head {
   font-size: 1.6rem;
   word-break: keep-all;
+  margin-bottom: 2.4rem;
+}
+
+.comment .comment-content-body {
+  font-size: 1.2rem;
+  word-break: keep-all;
+}
+
+.comment .comment-body-inner {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.comment-body-inner .subli {
+  font-size: 1rem;
+  margin: 0.2rem 0;
+}
+
+.comment-body-inner .subli::before {
+  content: "〉";
+  vertical-align: middle;
+  position: relative;
+  display: inline-block;
+  padding-left: 1rem;
+  color: #00ff4c;
 }
