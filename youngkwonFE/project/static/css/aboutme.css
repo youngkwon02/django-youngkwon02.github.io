@@ -18,7 +18,7 @@
 
 .sub-content {
   padding: 0 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 7rem;
 }
 
 .profile {
@@ -128,7 +128,7 @@
 }
 
 .comment-body-inner .subli::before {
-  content: "〉";
+  content: ">";
   vertical-align: middle;
   position: relative;
   display: inline-block;
@@ -138,7 +138,9 @@
 
 .timeline-wrapper {
   max-width: 50rem;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .timeline-container {
@@ -245,4 +247,62 @@
 .timeline__main .title {
   line-height: 0.65rem;
   word-break: keep-all;
+}
+
+.project-wrapper {
+}
+
+.project-content {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-content .project-elem {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.project-content .project-elem .project-thumb {
+  display: flex;
+  min-width: 5rem;
+  max-width: 7rem;
+  border-radius: 1.25rem;
+  justify-content: center;
+}
+
+.project-content .project-elem .project-thumb img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.25rem;
+}
+
+.project-content .project-elem .project-info {
+  padding-left: 1.6rem;
+  word-break: keep-all;
+}
+
+.project-content .project-elem .project-info .head .title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.project-content .project-elem .project-info .head .stack {
+  display: flex;
+  margin-bottom: 0.6rem;
+}
+
+.project-content .project-elem .project-info .head .stack .category {
+  color: #c28eec;
+  background: rgba(189, 66, 238, 0.212);
+  border-radius: 1.25rem;
+  padding: 0 0.6rem;
+  margin-right: 0.5rem;
+  display: flex;
+  min-width: 2rem;
+  justify-content: center;
+  font-size: 0.75rem;
+  line-height: 1.4rem;
+  margin-right: 0.6rem;
 }
