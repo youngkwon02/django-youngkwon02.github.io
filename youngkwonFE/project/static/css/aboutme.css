@@ -135,3 +135,114 @@
   padding-left: 1rem;
   color: #00ff4c;
 }
+
+.timeline-wrapper {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.timeline-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 1rem;
+  margin: 1rem 0 5rem;
+}
+
+.timeline {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  white-space: pre-line;
+}
+
+.timeline:nth-child(odd) {
+  position: relative;
+  padding-right: 2rem;
+  border-right: 2px solid #ccd5dd;
+  text-align: right;
+}
+
+.timeline:nth-child(2n) {
+  padding-top: 5.5rem;
+  padding-left: 2rem;
+  position: relative;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  margin: 1rem 0;
+}
+
+.timeline:nth-child(odd)::before {
+  top: 1.35rem;
+  right: -0.05rem;
+  border: 1px solid #8a8e94;
+  width: 16px;
+  position: absolute;
+  content: "";
+  background: #fff;
+  -webkit-align-self: center;
+  align-self: center;
+}
+
+.timeline:nth-child(odd)::after {
+  position: absolute;
+  content: "";
+  background: #fff;
+  -webkit-align-self: center;
+  align-self: center;
+  top: 1rem;
+  right: -0.83rem;
+  border-radius: 1.25rem;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border: 2px solid #8a8e94;
+  width: 8px;
+  height: 10px;
+  z-index: 1;
+}
+
+.timeline:nth-child(2n)::before {
+  top: 7rem;
+  border: 1px solid #8a8e94;
+  width: 16px;
+  position: absolute;
+  content: "";
+  left: -0.05rem;
+  background: #fff;
+  -webkit-align-self: center;
+  align-self: center;
+}
+
+.timeline:nth-child(2n)::after {
+  position: absolute;
+  content: "";
+  left: -0.05rem;
+  background: #fff;
+  -webkit-align-self: center;
+  align-self: center;
+  top: 6.6rem;
+  border-radius: 1.25rem;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border: 2px solid #8a8e94;
+  width: 8px;
+  height: 10px;
+  z-index: 1;
+}
+
+.timeline__main {
+  line-height: 1rem;
+}
+
+.timeline__main .when {
+  color: #00dbff;
+  font-weight: 700;
+}
+
+.timeline__main .title {
+  line-height: 0.65rem;
+  word-break: keep-all;
+}

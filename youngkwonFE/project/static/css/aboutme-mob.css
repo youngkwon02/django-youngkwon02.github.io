@@ -13,4 +13,7 @@
   .profile-info-wrapper {
     padding-left: 0rem !important;
   }
+  .timeline__main .title {
+    line-height: 1.2rem;
+  }
 }
