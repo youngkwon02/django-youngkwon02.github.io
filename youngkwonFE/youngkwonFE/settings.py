@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'project',
     'gallery',
     'sns',
+    'aboutme',
 ]
 
 MIDDLEWARE = [
