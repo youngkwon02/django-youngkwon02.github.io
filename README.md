@@ -14,3 +14,5 @@
 | 1.1.2 | 2021.12. | Gallery update ( remove and rename )  |
 | 2.0.0 | 2021.12. | Remove SNS section and create "About me" section |
 | 2.0.1 | 2021.12. | Gallery update ( Upload and ordering ) |
+| 2.0.2 | 2021.12. | About me - Spark Appeal Edition |
+| 2.0.3 | 2021.12. | About me - Appeal Edition Rollback |
