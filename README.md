@@ -16,3 +16,4 @@
 | 2.0.1 | 2021.12. | Gallery update ( Upload and ordering ) |
 | 2.0.2 | 2021.12. | About me - Spark Appeal Edition |
 | 2.0.3 | 2021.12. | About me - Appeal Edition Rollback |
+| 2.0.4 | 2022.01. | About me - Spark, BlackEagles and MSU update |
