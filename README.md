@@ -17,3 +17,4 @@
 | 2.0.2 | 2021.12. | About me - Spark Appeal Edition |
 | 2.0.3 | 2021.12. | About me - Appeal Edition Rollback |
 | 2.0.4 | 2022.01. | About me - Spark, BlackEagles and MSU update |
+| 2.0.5 | 2022.01. | About me - Title modification |
