@@ -19,3 +19,4 @@
 | 2.0.4 | 2022.01. | About me - Spark, BlackEagles and MSU update |
 | 2.0.5 | 2022.01. | About me - Title modification |
 | 2.0.6 | 2022.03. | Gallery - New photograph |
+| 2.0.7 | 2022.03. | About me - update AirForce Project |
