@@ -97,6 +97,7 @@
               여러분과 함께 성장하길 원하는<br />
               Web Frontend & Server 개발자 김영권입니다.
             </div>
+            {% comment %}
             <div class="comment-content-body">
               저는,<br />
               <div class="comment-body-inner">
@@ -120,9 +121,12 @@
                 </div>
               </div>
             </div>
+            {% endcomment %}
           </div>
         </div>
+        {% comment %}
         <div class="section-title">Timeline</div>
+        {% endcomment %}
         <div class="sub-content timeline-wrapper">
           <div class="timeline-container">
             <div class="timeline">
@@ -138,7 +142,7 @@
               <div class="timeline__main">
                 <div class="when">2022.01.17 - 2022.01.29</div>
                 <div class="title">
-                  Michigan State University<br />
+                  Michigan State University,<br />
                   Global Entrepreneurship and Innovation
                 </div>
               </div>
@@ -162,7 +166,7 @@
               <div class="timeline__main">
                 <div class="when">2019.03.18 - 2021.01.17</div>
                 <div class="title">
-                  대한민국 공군본부<br />
+                  Republic Of Korea Air Force Headquarter<br />
                   Web Application & Server Developer
                 </div>
               </div>
@@ -190,7 +194,9 @@
               <div class="project-info">
                 <div class="head">
                   <div class="title">
-                    Spark, A large fire comes from small spark🔥
+                    <a href="https://github.com/TeamSparker" target="_blank">
+                      Spark, A large fire comes from small spark🔥
+                    </a>
                   </div>
                   <div class="stack">
                     <div class="category">NodeJS</div>
@@ -226,7 +232,13 @@
               <div class="project-info">
                 <div class="head">
                   <div class="title">
-                    The Republic of Korea Air Force Aerobatic Team, Black Eagles
+                    <a
+                      href="https://rokaf.airforce.mil.kr/blackeagles/index.do"
+                      target="_blank"
+                    >
+                      The Republic of Korea Air Force Aerobatic Team, Black
+                      Eagles
+                    </a>
                   </div>
                   <div class="stack">
                     <div class="category">JSP</div>
@@ -239,7 +251,43 @@
                 </div>
                 <div class="detail">
                   대한민국 공군 본부에서 Web Application Developer로 근무하며,
-                  블랙이글스 공식 홈페이지를 개발 및 릴리즈 하였습니다.
+                  대한민국 공군 특수비행단, 블랙이글스의 공식 홈페이지를 개발 및
+                  릴리즈 하였습니다.
+                </div>
+              </div>
+            </div>
+            <div class="project-elem">
+              <div class="project-thumb">
+                <a
+                  href="https://rokaf.airforce.mil.kr/airforce/index.do"
+                  target="_blank"
+                >
+                  <img src="{% static 'image/aboutme/thumbnail/af.png' %}" />
+                </a>
+              </div>
+              <div class="project-info">
+                <div class="head">
+                  <div class="title">
+                    <a
+                      href="https://rokaf.airforce.mil.kr/airforce/index.do"
+                      target="_blank"
+                    >
+                      The Republic of Korea Air Force Headquarter
+                    </a>
+                  </div>
+                  <div class="stack">
+                    <div class="category">JSP</div>
+                    <div class="category not-mob-category">Javascript</div>
+                    <div class="category mob-category">JS</div>
+                    <div class="category">Java</div>
+                    <div class="category">Oracle</div>
+                    <div class="category">CMS</div>
+                  </div>
+                </div>
+                <div class="detail">
+                  대한민국 공군 본부에서 Web Application Developer로 근무하며,
+                  대한민국 공군 본부 공식 홈페이지를 지속적으로 개선, 관리 및
+                  유지보수 하였습니다.
                 </div>
               </div>
             </div>
@@ -254,7 +302,13 @@
               </div>
               <div class="project-info">
                 <div class="head">
-                  <div class="title">Barrier Free is the Best Friend</div>
+                  <div class="title">
+                    <a
+                      href="https://github.com/youngkwon02/JunctionX-MAEMO"
+                      target="_blank"
+                      >Barrier Free is the Best Friend</a
+                    >
+                  </div>
                   <div class="stack">
                     <div class="category">React</div>
                     <div class="category">Redux</div>
@@ -282,7 +336,11 @@
               </div>
               <div class="project-info">
                 <div class="head">
-                  <div class="title">캠퍼스런</div>
+                  <div class="title">
+                    <a href="https://github.com/Campus-Run" target="_blank"
+                      >캠퍼스런</a
+                    >
+                  </div>
                   <div class="stack">
                     <div class="category">NodeJS</div>
                     <div class="category">Django</div>
@@ -310,7 +368,13 @@
               </div>
               <div class="project-info">
                 <div class="head">
-                  <div class="title">ME:EW</div>
+                  <div class="title">
+                    <a
+                      href="https://github.com/WESOPT29th-Hackathon-Team6"
+                      target="_blank"
+                      >ME:EW</a
+                    >
+                  </div>
                   <div class="stack">
                     <div class="category">NodeJS</div>
                     <div class="category">Express</div>
@@ -339,7 +403,13 @@
               </div>
               <div class="project-info">
                 <div class="head">
-                  <div class="title">Signature</div>
+                  <div class="title">
+                    <a
+                      href="https://github.com/youngkwon02/The-Signature"
+                      target="_blank"
+                      >The Signature</a
+                    >
+                  </div>
                   <div class="stack">
                     <div class="category">Javascript</div>
                     <div class="category">Django</div>
@@ -356,6 +426,77 @@
             <div class="project-elem">
               <div class="project-thumb">
                 <a
+                  href="https://welfare.airforce.mil.kr:446/mbshome/mbs/welfare/index.do"
+                  target="_blank"
+                >
+                  <img src="{% static 'image/aboutme/thumbnail/af.png' %}" />
+                </a>
+              </div>
+              <div class="project-info">
+                <div class="head">
+                  <div class="title">
+                    <a
+                      href="https://welfare.airforce.mil.kr:446/mbshome/mbs/welfare/index.do"
+                      target="_blank"
+                    >
+                      대한민국 공군 복지시설예약체계
+                    </a>
+                  </div>
+                  <div class="stack">
+                    <div class="category">JSP</div>
+                    <div class="category not-mob-category">Javascript</div>
+                    <div class="category mob-category">JS</div>
+                    <div class="category">Java</div>
+                    <div class="category">Oracle</div>
+                    <div class="category">CMS</div>
+                  </div>
+                </div>
+                <div class="detail">
+                  대한민국 공군 본부에서 Web Application Developer로 근무하며,
+                  대한민국 공군 복지시설예약체계 홈페이지와 서버, 그리고
+                  Database를 개발 및 관리하였습니다.
+                </div>
+              </div>
+            </div>
+            <div class="project-elem">
+              <div class="project-thumb">
+                <a
+                  href="https://rokaf.airforce.mil.kr/sites/smartwing/index.do"
+                  target="_blank"
+                >
+                  <img
+                    src="{% static 'image/aboutme/thumbnail/smartaf.jpeg' %}"
+                  />
+                </a>
+              </div>
+              <div class="project-info">
+                <div class="head">
+                  <div class="title">
+                    <a
+                      href="https://rokaf.airforce.mil.kr/sites/smartwing/index.do"
+                      target="_blank"
+                      >대한민국 공군 지능형 스마트비행단</a
+                    >
+                  </div>
+                  <div class="stack">
+                    <div class="category">JSP</div>
+                    <div class="category not-mob-category">Javascript</div>
+                    <div class="category mob-category">JS</div>
+                    <div class="category">Java</div>
+                    <div class="category">Oracle</div>
+                    <div class="category">CMS</div>
+                  </div>
+                </div>
+                <div class="detail">
+                  대한민국 공군 본부에서 Web Application Developer로 근무하며,
+                  공군 지능형 스마트비행단 공식 홈페이지를 개발 및 릴리즈
+                  하였습니다.
+                </div>
+              </div>
+            </div>
+            <div class="project-elem">
+              <div class="project-thumb">
+                <a
                   href="https://www.instagram.com/tv/CSlSn8oF1_-/?utm_source=ig_web_copy_link"
                   target="_blank"
                 >
@@ -366,7 +507,13 @@
               </div>
               <div class="project-info">
                 <div class="head">
-                  <div class="title">DO,MAIN</div>
+                  <div class="title">
+                    <a
+                      href="https://www.instagram.com/tv/CSlSn8oF1_-/?utm_source=ig_web_copy_link"
+                      target="_blank"
+                      >DO MAIN</a
+                    >
+                  </div>
                   <div class="stack">
                     <div class="category">Javascript</div>
                     <div class="category">Django</div>
@@ -387,7 +534,11 @@
               </div>
               <div class="project-info">
                 <div class="head">
-                  <div class="title">모두의 의견을 자유롭게, 모의자!</div>
+                  <div class="title">
+                    <a href="https://youtu.be/3K2CKHKzg3g" target="_blank"
+                      >모두의 의견을 자유롭게, 모의자!</a
+                    >
+                  </div>
                   <div class="stack">
                     <div class="category">Javascript</div>
                     <div class="category">Django</div>

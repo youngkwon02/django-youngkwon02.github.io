@@ -51,6 +51,11 @@ html {
   padding: 0;
   background-color: #000000;
   overflow-x: hidden;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 body {
