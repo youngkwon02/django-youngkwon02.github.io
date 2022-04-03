@@ -20,3 +20,4 @@
 | 2.0.5 | 2022.01. | About me - Title modification |
 | 2.0.6 | 2022.03. | Gallery - New photograph |
 | 2.0.7 | 2022.03. | About me - update AirForce Project |
+| 2.0.8 | 2022.03. | Fix module import error and style refactoring |
