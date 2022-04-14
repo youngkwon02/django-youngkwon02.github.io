@@ -255,9 +255,6 @@ body {
   word-break: keep-all;
 }
 
-.project-wrapper {
-}
-
 .project-content {
   padding-left: 1rem;
   display: flex;
