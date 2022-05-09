@@ -601,11 +601,14 @@
         navigator.userAgent.indexOf("Linux") !== -1
       ) {
         userEnv = "PC";
-      } else if (navigator.userAgent.indexOf("Android") != -1) {
+      }
+      if (navigator.userAgent.indexOf("Android") != -1) {
         userEnv = "Android";
-      } else if (navigator.userAgent.indexOf("like Mac") != -1) {
+      }
+      if (navigator.userAgent.indexOf("like Mac") != -1) {
         userEnv = "iOS";
       }
+
       if (userEnv === "PC") {
         sparkUrls.forEach((u) => {
           u.href = "https://www.spark-habits.com/";
