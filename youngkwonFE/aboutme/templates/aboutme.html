@@ -195,14 +195,22 @@
           <div class="project-content">
             <div class="project-elem">
               <div class="project-thumb">
-                <a href="https://github.com/TeamSparker" target="_blank">
+                <a
+                  class="spark-url"
+                  href="https://github.com/TeamSparker"
+                  target="_blank"
+                >
                   <img src="{% static 'image/aboutme/thumbnail/spark.png' %}" />
                 </a>
               </div>
               <div class="project-info">
                 <div class="head">
                   <div class="title">
-                    <a href="https://github.com/TeamSparker" target="_blank">
+                    <a
+                      class="spark-url"
+                      href="https://github.com/TeamSparker"
+                      target="_blank"
+                    >
                       Spark, A large fire comes from small spark🔥
                     </a>
                   </div>
@@ -220,9 +228,8 @@
                 </div>
                 <div class="detail">
                   SOPT 29기 APPJAM에서 친구와 함께하는 66일간의 습관 형성 서비스
-                  Spark를 개발하여 대상을 수상하였습니다. 현재 TestFlight(iOS)
-                  및 apk(Android) 배포를 통해 베타 버전을 출시하였으며, 곧 정식
-                  출시할 예정입니다.
+                  Spark를 개발하여 대상을 수상하였습니다. 현재 Apple App Store와
+                  Google Play Store에 정식 출시 하였습니다.
                 </div>
               </div>
             </div>
@@ -583,4 +590,35 @@
       <span>Copyright ⓒ 2022. Youngkwon. All rights reserved</span>
     </div>
   </footer>
+  <script>
+    window.onload = () => {
+      const sparkUrls = document.querySelectorAll(".spark-url");
+      let userEnv = ""; // PC, Android, iOS
+
+      if (
+        navigator.userAgent.indexOf("Win") !== -1 ||
+        navigator.userAgent.indexOf("Mac") !== -1 ||
+        navigator.userAgent.indexOf("Linux") !== -1
+      ) {
+        userEnv = "PC";
+      } else if (navigator.userAgent.indexOf("Android") != -1) {
+        userEnv = "Android";
+      } else if (navigator.userAgent.indexOf("like Mac") != -1) {
+        userEnv = "iOS";
+      }
+      if (userEnv === "PC") {
+        sparkUrls.forEach((u) => {
+          u.href = "https://www.spark-habits.com/";
+        });
+      } else if (userEnv === "Android") {
+        sparkUrls.forEach((u) => {
+          u.href =
+            "https://play.google.com/store/apps/details?id=com.teamsparker.android";
+        });
+      } else if (userEnv === "iOS") {
+        u.href =
+          "https://apps.apple.com/kr/app/spark-%EC%8A%A4%ED%8C%8C%ED%81%AC-%EC%B9%9C%EA%B5%AC%EC%99%80-%EC%8A%B5%EA%B4%80-%EA%B4%80%EB%A6%AC/id1605811861";
+      }
+    };
+  </script>
 </html>
