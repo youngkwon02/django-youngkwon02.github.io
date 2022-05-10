@@ -24,3 +24,4 @@
 | 2.0.9 | 2022.04. | Fix MEEW Repository modified URL |
 | 2.1.0 | 2022.04. | Add Software Maestro 13th Preparatory Course Timeline |
 | 2.2.0 | 2022.05. | Minify script, Footer space, Spark Link according to user agent |
+| 2.2.1 | 2022.05. | Modify primary email address |
