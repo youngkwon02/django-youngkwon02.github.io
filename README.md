@@ -25,4 +25,5 @@
 | 2.1.0 | 2022.04. | Add Software Maestro 13th Preparatory Course Timeline |
 | 2.2.0 | 2022.05. | Minify script, Footer space, Spark Link according to user agent |
 | 2.2.1 | 2022.05. | Modify primary email address |
-| 2.2.2 | 2022.05. | Project(READ ME, 오시내시) update, Fix nav mail address| 
+| 2.2.2 | 2022.05. | Project(READ ME, 오시내시) update, Fix nav mail address | 
+| 2.2.3 | 2022.06. | Update Timeline (LikeLion 10th, Software Maestro 13th) | 
