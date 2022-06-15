@@ -700,7 +700,9 @@
       }
 
       if (userEnv === "PC") {
-        // @TODO: Access with PC url
+        sparkUrls.forEach((u) => {
+          u.href = "/home/spark";
+        });
       }
       if (userEnv === "Android") {
         sparkUrls.forEach((u) => {
