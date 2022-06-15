@@ -27,3 +27,4 @@
 | 2.2.1 | 2022.05. | Modify primary email address |
 | 2.2.2 | 2022.05. | Project(READ ME, 오시내시) update, Fix nav mail address | 
 | 2.2.3 | 2022.06. | Update Timeline (LikeLion 10th, Software Maestro 13th) | 
+| 2.3.0 | 2022.06. | Update Timeline (Hide Software Maestro 13th temporary, Update spark PC url) | 
