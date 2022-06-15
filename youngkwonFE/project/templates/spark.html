@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="{% static 'image/favicon.ico' %}" />
+    <link rel="stylesheet" href="{% static 'css/common.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/spark.css' %}" />
+    <title>Spark</title>
+  </head>
+  <body>
+    <div class="spark-container"></div>
+    <div class="download-container">
+      <a
+        target="_blank"
+        href="https://apps.apple.com/kr/app/spark-%EC%8A%A4%ED%8C%8C%ED%81%AC-%EC%B9%9C%EA%B5%AC%EC%99%80-%EC%8A%B5%EA%B4%80-%EA%B4%80%EB%A6%AC/id1605811861"
+        ><div class="download-btn download-ios"></div
+      ></a>
+      <a
+        href="https://play.google.com/store/apps/details?id=com.teamsparker.android"
+        ><div class="download-btn download-aos"></div
+      ></a>
+    </div>
+    <a target="_blank" href="/"><div class="cancel-btn"></div></a>
+  </body>
+</html>
