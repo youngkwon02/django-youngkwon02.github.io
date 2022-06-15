@@ -8,4 +8,5 @@ urlpatterns = [
   path('slingshot/', views.slingshot_view, name="slingshot"),
   path('acidWorld/', views.acid_world_view, name="acidWorld"),
   path('sunset/', views.sunset_view, name="sunset"),
+  path('spark/', views.spark_view, name="spark"),
 ]
