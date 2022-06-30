@@ -63,4 +63,7 @@
   .mob-category {
     display: flex !important;
   }
+  .gpa-box {
+    margin: 0 !important;
+  }
 }
