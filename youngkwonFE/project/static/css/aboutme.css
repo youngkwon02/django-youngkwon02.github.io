@@ -313,3 +313,7 @@ body {
 .project-content .project-elem .project-info .head .stack .mob-category {
   display: none;
 }
+
+.gpa-box {
+  line-height: .7rem;
+}
