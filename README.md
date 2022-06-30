@@ -30,3 +30,4 @@
 | 2.3.0 | 2022.06. | Update Timeline (Hide Software Maestro 13th temporary, Update spark PC url) | 
 | 2.3.1 | 2022.06. | Debug off | 
 | 2.3.2 | 2022.06. | Make SW Maestro visible | 
+| 2.4.0 | 2022.07. | GPA update and Style Refactoring, Tech stack update | 
