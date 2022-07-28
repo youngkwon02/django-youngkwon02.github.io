@@ -11,7 +11,7 @@ const GALLERY_INDEX = [
   "SWM-Start.JPG",
   "Airforce-Start.jpg",
   "Airforce-End.jpg",
-  "We-Are.JPG",
+  "we-are.JPG",
   "New-Start.jpg",
   "My-world.jpeg",
   "Spark.jpeg",
