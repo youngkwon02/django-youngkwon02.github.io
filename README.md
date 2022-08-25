@@ -32,4 +32,5 @@
 | 2.3.2 | 2022.06. | Make SW Maestro visible | 
 | 2.4.0 | 2022.06. | GPA update and Style Refactoring, Tech stack update | 
 | 2.4.1 | 2022.07. | Update CMS tech stack style, Update gpa-box margin style | 
-| 3.0.1 | 2022.07. | SSL certification, Instance update, Domain change (.site -> .co.kr), Gallery update | 
+| 3.0.1 | 2022.07. | SSL certification, Instance update, Domain change (.site -> .co.kr), Gallery update |
+| 3.0.2 | 2022.08. | Update about me header | 
