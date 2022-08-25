@@ -10,4 +10,5 @@ urlpatterns = [
     path('gallery/', include('gallery.urls')),
     path('sns/', include('sns.urls')),
     path('', include('aboutme.urls')),
+    path('', include('pwa.urls')),
 ]

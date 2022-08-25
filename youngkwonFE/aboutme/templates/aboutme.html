@@ -1,4 +1,4 @@
-{% load static %}
+{% load pwa %} {% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,6 +16,23 @@
     <link rel="stylesheet" href="{% static 'css/common-desktop.css' %}" />
     <link rel="stylesheet" href="{% static 'css/aboutme.css' %}" />
     <link rel="stylesheet" href="{% static 'css/aboutme-mob.css' %}" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Youngkwon Kim" />
+    <link rel="apple-touch-icon" href="{% static 'image/logo-192x192.png' %}" />
+    <link rel="manifest" href="{% static 'manifest.json' %}" />
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("{% static 'js/sw.js' %}")
+          .then((reg) => {
+            console.log("서비스 워커가 등록됨.", reg);
+          });
+      }
+    </script>
     <title>Youngkwon Kim</title>
   </head>
 
