@@ -35,3 +35,4 @@
 | 3.0.1 | 2022.07. | SSL certification, Instance update, Domain change (.site -> .co.kr), Gallery update |
 | 3.0.2 | 2022.08. | Update about me header | 
 | 3.0.3 | 2022.08. | Progressive Web Application, Style update | 
+| 3.0.4 | 2022.11. | Update profile image, Update projects | 
