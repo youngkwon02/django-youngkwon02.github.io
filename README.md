@@ -1,6 +1,6 @@
 <div align=center>
 
-[![header](https://capsule-render.vercel.app/api?type=soft&fontColor=020202&height=180&section=header&text=ʜᴇʟʟᴏ,%20ᴛʜɪꜱ%20ɪꜱ%20ʏᴏᴜɴɢᴋᴡᴏɴ%20ᴋɪᴍ%20!&fontAlignY=34&fontSize=48&desc=𝒘𝒘𝒘.𝒚𝒐𝒖𝒏𝒈𝒌𝒘𝒐𝒏.𝒔𝒊𝒕𝒆&descAlignY=60&animation=twinkling)](http:youngkwon.site)
+<img src='https://capsule-render.vercel.app/api?type=soft&fontColor=020202&height=180&section=header&text=ʜᴇʟʟᴏ,%20ᴛʜɪꜱ%20ɪꜱ%20ʏᴏᴜɴɢᴋᴡᴏɴ%20ᴋɪᴍ%20!&fontAlignY=34&fontSize=48&desc=https:youngkwon.co.kr&descAlignY=60&animation=twinkling'>
   
 </div>
 
@@ -35,3 +35,4 @@
 | 3.0.1 | 2022.07. | SSL certification, Instance update, Domain change (.site -> .co.kr), Gallery update |
 | 3.0.2 | 2022.08. | Update about me header | 
 | 3.0.3 | 2022.08. | Progressive Web Application, Style update | 
+| 3.0.4 | 2022.11. | Update profile image, Update projects | 
