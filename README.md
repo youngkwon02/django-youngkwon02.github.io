@@ -38,3 +38,4 @@
 | 3.0.3 | 2022.08. | Progressive Web Application, Style update | 
 | 3.0.4 | 2022.11. | Update profile image, Update projects | 
 | 3.0.5 | 2022.11. | Fix Typo, Update PWA icon + favicon | 
+| 3.0.6 | 2023.01. | Update SW Maestro end date | 
