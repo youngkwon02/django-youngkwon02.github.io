@@ -39,3 +39,4 @@
 | 3.0.4 | 2022.11. | Update profile image, Update projects | 
 | 3.0.5 | 2022.11. | Fix Typo, Update PWA icon + favicon | 
 | 3.0.6 | 2023.01. | Update SW Maestro end date | 
+| 3.0.7 | 2023.01. | Copyright 2023 | 
